@@ -1,1 +1,7 @@
-runner.py
+.venv/
+.env
+Knowledge Graph/.venv/
+Knowledge Graph/.env
+MeTTa Practice/.gitignore
+**/__pycache__/
+*.pyc
