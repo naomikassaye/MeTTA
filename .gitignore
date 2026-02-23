@@ -5,3 +5,4 @@ Knowledge Graph/.env
 MeTTa Practice/.gitignore
 **/__pycache__/
 *.pyc
+hyperon/
