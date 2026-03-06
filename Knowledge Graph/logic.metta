@@ -1,17 +1,3 @@
-
-(= (getprop $obj $key)
-   (match &self 
-      (instance $obj $class)           
-      (match &self 
-          (subclass $class $parent)    
-          (match &self 
-              (propclass $parent $key $val) 
-              $val
-          )
-      )
-   ))
-
-
 (instance Python Programming_Language)
 (instance SQL Database_Tool)
 (instance React Web_Framework)
@@ -22,5 +8,12 @@
 
 (propclass Study_Topic difficulty Beginner)
 
+(= (getprop $obj $key)
+    (match &self 
+        (, (instance $obj $class) 
+           (subclass $class $parent) 
+           (propclass $parent $key $val)) 
+        $val)
+)
 
 !(getprop Python difficulty)

@@ -1,8 +1,7 @@
+
 .venv/
 .env
-Knowledge Graph/.venv/
-Knowledge Graph/.env
-MeTTa Practice/.gitignore
 **/__pycache__/
 *.pyc
-hyperon/
+Knowledge Graph/.env
+settings.json
